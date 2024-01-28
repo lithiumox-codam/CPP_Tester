@@ -8,9 +8,6 @@ const test_strings_ex00 = [
     "   Dit is een test   ",
 ]
 
-// for ex00 all alpabetic chars will be replaced by their uppercase version
-// every other character will be kept intact and printed as is (including spaces)
-// compare the output of the CPP version with the output of the JS version
 export async function ex00(): Promise<Boolean> {
     const no_args = await $`../00/ex00/megaphone`.text()
     if (no_args !== "* LOUD AND UNBEARABLE FEEDBACK NOISE *") {
