@@ -1,0 +1,29 @@
+import { expect, test, describe } from "bun:test";
+import { $ } from "bun";
+import { test_dir } from "..";
+
+const program = `${test_dir}/01/ex04/replace`
+
+// this is broken as hell might pick it up later
+// describe("01/ex04", () => {
+//     test("swearing.txt", async () => {
+//         const replace = "****"
+//         const replace_with = "poop"
+//         $`${program} tests/swearing.txt "${replace}" ${replace_with}`
+//         const swearing = await Bun.file('./Code/01/ex04/tests/swearing.txt').text()
+//         let replace_count = 0
+//         for (let i = 0; i < swearing.length; i++) {
+//             if (swearing[i] === "*" && swearing[i + 1] === "*" && swearing[i + 2] === "*" && swearing[i + 3] === "*")
+//                 replace_count++
+//         }
+//         const swear_replaced = await Bun.file('./Code/01/ex04/replaced.txt').text()
+
+//         let replace_with_count = 0
+//         for (let i = 0; i < test.length; i++) {
+//             if (test[i] === "p" && test[i + 1] === "o" && test[i + 2] === "o" && test[i + 3] === "p")
+//                 replace_with_count++
+
+//             console.log(replace_count)
+//             expect(test).toThrow()
+//         })
+// })
